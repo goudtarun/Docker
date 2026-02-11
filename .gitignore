@@ -1,0 +1,3 @@
+*.tar
+*.log
+node_modules/
