@@ -1,7 +1,3 @@
-# Docker
-This Repo Represents all the docker projects i.e (beginner, Intermediate and Advanced)
-
-
 # Dockerized Static Website using Nginx
 
 This project demonstrates how to containerize a static website template using Docker and Nginx.
