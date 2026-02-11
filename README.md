@@ -25,19 +25,20 @@ RUN apt update &&
 RUN apt install nginx -y
 COPY templatemo-604-christmas-piano/ /usr/share/nginx/html/
 CMD ["nginx" , "-g" , "daemon-off;"]
+```
 
 ## Build the Docker Image
-
-docker build -t docker-static-site .
-
+```
+docker build .  -t docker-static-site 
+```
 ## Run the Container
-
+```
 docker run -d -p 80:80 --name static-site docker-static-site
-
+```
 Then open:
-
+```
 http://<your-server-public-ip>
-
+```
 ## Technologies Used
 
 - Docker
