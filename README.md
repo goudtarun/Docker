@@ -7,7 +7,7 @@ This Repo Represents all the docker projects i.e (beginner, Intermediate and Adv
 This project demonstrates how to containerize a static website template using Docker and Nginx.
 
 ## Project Structure
-
+```
 .
 ├── Dockerfile
 ├── templatemo-604-christmas-piano/
@@ -16,14 +16,15 @@ This project demonstrates how to containerize a static website template using Do
 │   ├── js/
 │   └── images/
 └── README.md
+```
 
 ## Dockerfile Used
 
-```FROM ubuntu```
-```RUN apt update &&```
-```RUN apt install nginx -y```
-```COPY templatemo-604-christmas-piano/ /usr/share/nginx/html/```
-```CMD ["nginx" , "-g" , "daemon-off;"]```
+```FROM ubuntu
+RUN apt update &&
+RUN apt install nginx -y
+COPY templatemo-604-christmas-piano/ /usr/share/nginx/html/
+CMD ["nginx" , "-g" , "daemon-off;"]
 
 ## Build the Docker Image
 
