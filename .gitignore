@@ -1,0 +1,11 @@
+.bash_history
+.bash_logout
+.bashrc
+.cache/
+.gitconfig
+.lesshst
+.profile
+.ssh/
+.sudo_as_admin_successful
+.viminfo
+ansible/
