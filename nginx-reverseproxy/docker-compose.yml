@@ -1,0 +1,18 @@
+services:
+  app1:
+    build: ./app1
+
+  app2:
+    build: ./app2
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - app1
+      - app2
+
+
