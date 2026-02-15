@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+ webserver:
+   image: wordpress
+   ports: 
+    - 80:80
+   volumes:
+    - wordpress:/var/www/html
+   environment:
+    WORDPRESS_DB_HOST : database
+    WORDPRESS_DB_USER : root
+    WORDPRESS_DB_PASSWORD : test
+    WORDPRESS_DB_NAME : WORDPRESS
+
+ database:
+   image : mysql
+   volumes:
+     - database:/var/lib/mysql
+   environment:
+     MYSQL_ROOT_PASSWORD : "test"
+     MYSQL_DATABASE : WORDPRESS
+
+volumes:
+   wordpress :
+   database :
+
+
+
