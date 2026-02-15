@@ -1,4 +1,4 @@
-# Dockerized Python Flask Application 🚀
+# Dockerized Python Flask Application
 
 ##  Project Overview
 
